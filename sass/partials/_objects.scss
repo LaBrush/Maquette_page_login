@@ -1,0 +1,16 @@
+$button: #e67e22;
+$button-color: #fefefe;
+
+.button
+{
+	background: $button;
+	border: none;
+	color: $button-color;
+	padding: 10px;
+	@include border-radius(5px);
+
+	&:hover, &:active, &:focus
+	{
+		background: darken($button, 5%);
+	}
+}
