@@ -1,0 +1,30 @@
+$body-background:		#ebebeb;
+
+
+.body
+{
+	background: $body-background;
+}
+
+
+/***********************************************************************************/
+/* Section */
+$article-background:	#fefefe;
+$extract:               #fefefe;
+
+.section
+{
+	vertical-align: middle;
+	margin: 10% auto 0 auto;
+	width: 90%;
+	max-width: 1000px;
+	@include pie-clearfix;
+}
+
+.article
+{
+	width: 100%;
+	margin-bottom: 15px;
+	background: $article-background;
+	@include border-radius(7px);
+}

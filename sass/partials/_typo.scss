@@ -2,7 +2,6 @@
 /* Typographie de la page web ************************/
 
 $texte:         #5d5e64;
-$bold:          #9d9d9d;
 $liens:         #5d5e64;
 $liensSurvoles: inherit;
 
@@ -11,31 +10,48 @@ $liensSurvoles: inherit;
 
 
 /* Taille et police par défaut */
+*
+{
+	font-family: inherit;
+}
+
+html
+{
+	font-size: 100%;
+}
+
 body
 {
-    font-size: 13px;
+    font-size: 0.9em;
     font-family: 'Noto Sans', arial, sans-serif;
+    line-height: 1.4em;
     color: $texte;
-    text-align: left ;
+    text-align: left;
 }
 
 
 /* Epaisseurs */
 .normal     {font-weight: normal;}
-.bold       {font-weight: bold; color: $bold; font-size: 0.85em;}
+.bold       {font-weight: bold;}
+strong 		{font-weight: bold;}
+em 			{font-style: italic; font-size: 0.8em;}
 
 
 /* Majuscules et petites majuscules */
 .majuscules       { text-transform:   uppercase;}
 .mini-majuscules  { font-variant:     small-caps;}
 
+/* Tailles polices */
+.large { font-size: 1.2em; }
+.small { font-size: 0.9em; }
+
 /* Titres */
-h1, .h1 { font-size: 2.2em;  font: bold; }
+h1, .h1 { font-size: 2em;  font: bold; }
 h2, .h2 { font-size: 1.5em; }
-h3, .h3 { font-size: 1.4em; }
+h3, .h3 { font-size: 1.2em; }
 h4, .h4 { font-size: 1.1em; }
-h5, .h5 { font-size: 0.8em; }
-h6, .h6 { font-size: 0.8em; }
+h5, .h5 { font-size: 1em; }
+h6, .h6 { font-size: 1em; }
 
 
 /* Liens */
@@ -51,7 +67,5 @@ a:active   { color: $liensSurvoles;}
 
 
 /* Decoration */
-.raye
-{
-	text-decoration: line-through;
-}
+.raye {text-decoration: line-through;}
+.underline {text-decoration: underline;}
