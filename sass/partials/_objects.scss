@@ -6,8 +6,7 @@ $button-color: #fefefe;
 	background: $button;
 	border: none;
 	color: $button-color;
-	padding: 10px;
-	@include border-radius(5px);
+	padding: 0 20px;
 
 	&:hover, &:active, &:focus
 	{
