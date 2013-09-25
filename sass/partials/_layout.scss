@@ -46,10 +46,10 @@ $hide: 					$body-background;
 	position: absolute;
 	top:0;
 
-	margin: 200px 0 0 0;
+	margin: 0;
 	width: 100%;
 	max-width: 100%;
-	padding: 10%;
+	padding: 120px 10%;
 
 	@include box-sizing(border-box);
 
@@ -70,6 +70,11 @@ $hide: 					$body-background;
 	height: 50px;
 	z-index: 1;
 	font-weight: 700;
+
+	.img-present
+	{
+		box-shadow: 0 0 10px black;
+	}
 }
 
 .hide-invisible

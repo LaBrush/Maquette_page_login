@@ -14,3 +14,14 @@ $button-color: #fefefe;
 		background: darken($button, 5%);
 	}
 }
+
+
+.img-present
+{
+	display: block;
+	margin: 0 auto 70px;
+	width: 100%;
+	max-width: 800px;
+	max-height: 263px;
+	overflow: hidden;
+}
