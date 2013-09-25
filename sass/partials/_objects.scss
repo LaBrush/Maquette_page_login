@@ -8,6 +8,7 @@ $button-color: #fefefe;
 	color: $button-color;
 	padding: 0 20px;
 	font-size: 1em;
+	cursor: pointer;
 
 	&:hover, &:active, &:focus
 	{
