@@ -46,9 +46,13 @@ $hide: 					$body-background;
 	position: absolute;
 	top:0;
 
-	margin: 200px 10% 0 10%;
-	width: 80%;
-	max-width: 800px;
+	margin: 200px 0 0 0;
+	width: 100%;
+	max-width: 100%;
+	padding: 10%;
+
+	@include box-sizing(border-box);
+
 	@include pie-clearfix;
 }
 
@@ -80,8 +84,7 @@ $hide: 					$body-background;
 
 .article
 {
-	width: 100%;
-	margin-bottom: 50px;
+	margin: 0 auto 50px auto;
 	background: $article-background;
-	@include border-radius(7px);
+	max-width: 800px;
 }
