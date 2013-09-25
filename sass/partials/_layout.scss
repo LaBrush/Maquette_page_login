@@ -1,4 +1,4 @@
-$body-background:		#fefefe;
+$body-background:		rgb(250, 250, 250);
 
 
 .body
@@ -10,7 +10,7 @@ $body-background:		#fefefe;
 
 /***********************************************************************************/
 /* Nav */
-$nav: #eeeeee;
+$nav: rgba(230, 230, 230, 0.9);
 
 .nav
 {
@@ -20,6 +20,8 @@ $nav: #eeeeee;
 	padding: 13px;
 	height: 24px;
 	background: $nav;
+
+	z-index: 10;
 }
 
 .button
@@ -35,16 +37,45 @@ $nav: #eeeeee;
 
 /***********************************************************************************/
 /* Section */
-$article-background:	#fefefe;
+$article-background:	rgba(250, 250, 250, 0);
 $extract:               #fefefe;
+$hide: 					$body-background;
 
-.section
+@mixin section-base
 {
-	vertical-align: middle;
-	margin: 15% auto 0 auto;
+	position: absolute;
+	top:0;
+
+	margin: 200px 10% 0 10%;
 	width: 80%;
 	max-width: 800px;
 	@include pie-clearfix;
+}
+
+.section-visible
+{
+	@include section-base;
+	z-index: 5;
+}
+
+.section-invisible
+{
+	@include section-base;
+	color: $article-background;
+	text-shadow: 0 0 4px black;
+	height: 50px;
+	z-index: 1;
+	font-weight: 700;
+}
+
+.hide-invisible
+{
+	position: fixed;
+	top: 50px;
+	width: 100%;
+	height: 100%;
+	background: $hide;
+	z-index: 2;
 }
 
 .article
