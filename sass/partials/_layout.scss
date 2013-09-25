@@ -4,7 +4,6 @@ $body-background:		rgb(250, 250, 250);
 .body
 {
 	background: $body-background;
-	width: 100%;
 }
 
 
@@ -38,7 +37,6 @@ $nav: rgba(230, 230, 230, 0.9);
 /***********************************************************************************/
 /* Section */
 $article-background:	rgba(250, 250, 250, 0);
-$extract:               #fefefe;
 $hide: 					$body-background;
 
 @mixin section-base
@@ -46,14 +44,10 @@ $hide: 					$body-background;
 	position: absolute;
 	top:0;
 
-	margin: 0;
 	width: 100%;
-	max-width: 100%;
 	padding: 120px 10%;
 
 	@include box-sizing(border-box);
-
-	@include pie-clearfix;
 }
 
 .section-visible
