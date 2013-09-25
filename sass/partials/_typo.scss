@@ -23,7 +23,7 @@ html
 body
 {
     font-size: 0.9em;
-    font-family: 'Noto Sans', arial, sans-serif;
+    font-family: 'Raleway', arial, sans-serif;
     line-height: 1.4em;
     color: $texte;
     text-align: left;
@@ -31,9 +31,10 @@ body
 
 
 /* Epaisseurs */
-.normal     {font-weight: normal;}
-.bold       {font-weight: bold;}
-strong 		{font-weight: bold;}
+.light 		{font-weight: 300;}
+.normal     {font-weight: 400;}
+.bold       {font-weight: 700;}
+strong 		{font-weight: 700;}
 em 			{font-style: italic; font-size: 0.8em;}
 
 
