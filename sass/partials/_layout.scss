@@ -10,6 +10,8 @@ $body-background:		rgb(250, 250, 250);
 /***********************************************************************************/
 /* Nav */
 $nav: rgba(230, 230, 230, 0.9);
+$logo: #aaaaaa;
+$logo-color: #fefefe;
 
 .nav
 {
@@ -21,6 +23,23 @@ $nav: rgba(230, 230, 230, 0.9);
 	background: $nav;
 
 	z-index: 10;
+}
+
+.logo
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	background: $logo;
+	color: $logo-color;
+
+	.h2
+	{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 15px 28px;
+	}
 }
 
 .button
