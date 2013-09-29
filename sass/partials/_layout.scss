@@ -9,17 +9,17 @@ $body-background:		rgb(250, 250, 250);
 
 /***********************************************************************************/
 /* Nav */
-$nav: rgba(230, 230, 230, 0.9);
-$logo: none;
-$logo-color: inherit;
+$header: rgba(230, 230, 230, 0.9);
+$logo: #1a736f;
+$logo-color: #fefefe;
 
-.nav
+.header
 {
 	width: 100%;
 	position: fixed;
 	padding: 13px;
 	height: 24px;
-	background: $nav;
+	background: $header;
 
 	z-index: 10;
 }
@@ -37,7 +37,7 @@ $logo-color: inherit;
 	{
 		display: inline-block;
 		vertical-align: middle;
-		margin: 15px 28px;
+		margin: 15px 20px;
 	}
 }
 

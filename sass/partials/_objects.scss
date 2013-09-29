@@ -1,4 +1,4 @@
-$button: #e67e22;
+$button: #1a736f;
 $button-color: #fefefe;
 
 .button
@@ -7,7 +7,7 @@ $button-color: #fefefe;
 	border: none;
 	color: $button-color;
 	padding: 0 20px;
-	font-size: 1em;
+	font-size: 1.1em;
 	cursor: pointer;
 
 	&:hover, &:active, &:focus
