@@ -1,28 +1,70 @@
-$button:       #e67e22;
-$button-color: #fefefe;
+$button-login:  #e67e22;
+$button-text: 	#fefefe;
 
-.button
+@mixin button
 {
-	background: $button;
 	border: none;
-	color: $button-color;
+	margin: 0;
+	@include border-radius(2px);
+	padding: 4px 10px;
+	color: $button-text;
+	font-size: 0.8em;
+	cursor: pointer;
+}
+
+.button-login
+{
+	@include button;
+
+	background: $button-login;
 	padding: 0 20px;
 	font-size: 1.1em;
-	cursor: pointer;
+
+	@include border-radius(0);
 
 	&:hover, &:active, &:focus
 	{
-		background: darken($button, 5%);
+		background: darken($button-login, 5%);
+	}
+}
+
+.button-validate
+{
+	@include button;
+
+	background: $button-login;
+
+	&:hover, &:active, &:focus
+	{
+		background: darken($button-login, 5%);
 	}
 }
 
 
-.img-present
+/*********************************************************************/
+/* Inputs */
+$input: 	#aaaaaa;
+
+input[type="text"], input[type="password"], input[type="mail"]
 {
-	display: block;
-	margin: auto;
-	width: 100%;
-	max-width: 800px;
-	max-height: 260px;
-	overflow: hidden;
+	padding: 3px;
+	border: 1px $input solid;
+	@include border-radius(3px);
+
+	&:hover, &:focus, &:active
+	{
+		border: 1px $input solid;
+	}
+}
+
+select
+{
+	padding: 3px;
+	border: 1px $input solid;
+	@include border-radius(3px);
+
+	&:hover, &:focus, &:active
+	{
+		border: 1px $input solid;
+	}
 }
