@@ -54,7 +54,7 @@ $logo-color: #fefefe;
 	top: 0;
 	right: 0;
 	height: 50px;
-	width: 190px;
+	width: 200px;
 
 	z-index: 3;
 }
@@ -66,15 +66,22 @@ $logo-color: #fefefe;
 	position: fixed;
 	right: 0;
 	top: 50px;
-	width: 190px;
+	width: 200px;
+
 	background: $header;
 
 	z-index: 1;
 
 	span, button
 	{
-		margin: 15px;
+		margin: 13px 10px;
 		display: block;
+	}
+
+	#name, #password
+	{
+		width: 180px;
+		@include box-sizing(border-box);
 	}
 
 	@include box-sizing(border-box);
@@ -88,8 +95,7 @@ $logo-color: #fefefe;
 	position: fixed;
 	top: -100%;
 	right: 0;
-	width: 190px;
-	padding: 15px;
+	width: 200px;
 	background: $header;
 
 	z-index: 0;
