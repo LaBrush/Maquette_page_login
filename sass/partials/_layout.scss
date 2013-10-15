@@ -90,6 +90,8 @@ $logo-color: #fefefe;
 		@include box-sizing(border-box);
 	}
 
+	@include animate(0.4s);
+
 	@include box-sizing(border-box);
 }
 
@@ -109,6 +111,14 @@ $logo-color: #fefefe;
 		margin: 15px;
 		display: block;
 	}
+
+	#name, #password
+	{
+		width: 180px;
+		@include box-sizing(border-box);
+	}
+
+	@include animate(0.4s);
 
 	@include box-sizing(border-box);
 }
